@@ -30,10 +30,12 @@ export default function Home() {
                         <Image source={logo} style={styles.logo} />
                         <Text style={styles.titleText}>Status Covid App</Text>
                     </View>
+                    <Text>Selecione o Estado abaixo:</Text>
                     <Picker selectedValue={states}
-                            style={{height:30, width:150, marginTop: 20, alignItems:'center', flex:1,
-                            borderRadius: 8}}
-                            onValueChange={(itemValue, itemIndex) => setStates(itemValue)}
+                            style={{height:30, width:150,alignItems:'center' ,marginTop: 20 ,backgroundColor: 'rgb(220,220,220)'
+                            }}
+                        
+                            onValueChange={(itemValue) => setStates(itemValue)}
                             >
                         <Picker.Item label='Acre' value='ac' />
                         <Picker.Item label='Alagoas' value='al' />
